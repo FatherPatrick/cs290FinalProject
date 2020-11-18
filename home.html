@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Final Home</title>
+
+    <style>
+        img.darth{
+            width:500px;
+            height:312.50px;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+        }
+    </style>
+</head>
+<body>
+    <!--Horizontal navigation bar-->
+    <div>
+        <table border="1">
+            <tr>
+                <td><a href="home.html">Home</a></td>
+                <td><a href="otherPage.html">Other Page</a></td>
+                <td><a href="otherOtherPage.html">Other Other Page</a></td>
+                <td><a href="finalPage.html">Final Page</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h1 style="text-align:center">Yoooooo Welcome to my Final Project, its Star Wars themed</h1><br>
+        <img class="darth" src="darthVader.jpg" alt="Darth Vader">
+    </div><br>
+
+    <!--This is all of the picture slideshow (carousel) stuff and code-->
+    <img class="mySlides" src="heavyMando.webp" alt="Heavy Mando" style="width:1000px;height:452.64px">
+    <img class="mySlides" src="mandoAction.webp" alt="Mando in Action" style="width:1000px;height:571.53px">
+    <img class="mySlides" src="mandoATST.png" alt="ATST" style="width:1000px;height:563.33px">
+
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+</html>

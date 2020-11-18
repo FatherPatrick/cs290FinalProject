@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Final Other Page</title>
+
+    <style>
+        form.contact {
+            border:1px solid black;
+            padding:4px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--Horizontal navigation bar-->
+    <div>
+        <table border="1">
+            <tr>
+                <td><a href="home.html">Home</a></td>
+                <td><a href="otherPage.html">Other Page</a></td>
+                <td><a href="otherOtherPage.html">Other Other Page</a></td>
+                <td><a href="finalPage.html">Final Page</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <h1 style="text-align:center">Yoooooo Welcome to my Final Project, this is the first other page. It is the Contact us page.</h1><br>
+
+    <!--Contact us form stuff-->
+    <form class="contact" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post" id="contactForm">
+        <h2 style="text-align:left">Contact Us</h2>
+
+        <label for="text_input">First name:</label><br>
+        <input type="text" id="fname" name="text_input"><br>
+
+        <label for="numerical_input">Answer to life:</label><br>
+        <input type="number" id="num" name="numerical_input"><br>
+
+        <label for="password_input">Favorite Password</label><br>
+        <input type="password" id="pass" name="password_input"><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
